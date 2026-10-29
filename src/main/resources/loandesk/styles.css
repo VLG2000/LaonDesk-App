@@ -1,0 +1,71 @@
+/* LoanDesk stylesheet (JavaFX CSS: properties start with -fx-). */
+
+.root {
+    -fx-font-size: 13px;
+    -fx-background-color: #f2f4f7;
+}
+
+/* White rounded panel used on the login/signup screens. */
+.card {
+    -fx-background-color: white;
+    -fx-padding: 28;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 14, 0, 0, 3);
+}
+
+.title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2d3d;
+}
+
+.subtitle {
+    -fx-text-fill: #5a6775;
+}
+
+.section-title {
+    -fx-font-weight: bold;
+}
+
+.hint {
+    -fx-text-fill: #6b7785;
+    -fx-font-size: 11px;
+}
+
+.error-text {
+    -fx-text-fill: #b3261e;
+}
+
+.success-text {
+    -fx-text-fill: #1e7b34;
+}
+
+.button.primary {
+    -fx-base: #2f6fde;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.details {
+    -fx-font-family: "Monospaced";
+}
+
+/* Overdue loans: red tint. Changing the inner background (instead of -fx-background-color)
+   keeps JavaFX's normal blue highlight for the selected row. */
+.table-row-cell.overdue-row {
+    -fx-control-inner-background: #fde2e1;
+    -fx-control-inner-background-alt: #fbd5d3;
+}
+
+.table-row-cell.overdue-row .table-cell {
+    -fx-font-weight: bold;
+}
+
+/* Returned loans: grey text. */
+.table-row-cell.returned-row .table-cell {
+    -fx-text-fill: #7a838c;
+}
+
+.table-row-cell.returned-row:selected .table-cell {
+    -fx-text-fill: white;
+}
